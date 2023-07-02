@@ -1,5 +1,4 @@
 import SessionCard from '../elements/session-card';
-
 import classes from './Session.module.css';
 
 const tuesday = [
