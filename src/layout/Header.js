@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 import Logo from './../assets/images/logo.svg';
 import ArrowDown from './../assets/images/arrow-down.svg';
@@ -8,6 +9,8 @@ import classes from './Header.module.css';
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [isSmallHeader, setIsSmallHeader] = useState(false);
+    const navigate = useNavigate();
+    const { pathname } = useLocation();
 
     const togglerMenuHandler = () => {
         setShowMenu((prevState) => !prevState);
@@ -15,6 +18,23 @@ const Header = () => {
 
     const hideMenu = () => {
         setShowMenu(false);
+    };
+
+    const visitHomePage = () => {
+        setShowMenu(false);
+        if (pathname !== '/') {
+            navigate('/');
+
+            setTimeout(() => {
+                const plansSection = document.getElementById('plans');
+
+                plansSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                    inline: 'nearest',
+                });
+            }, 600);
+        }
     };
 
     useEffect(() => {
@@ -56,11 +76,18 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             <li className={classes['dropdown__list-item']}>
-                                                <Link to='/' onClick={hideMenu}>
+                                                <ScrollLink
+                                                    to='plans'
+                                                    spy={true}
+                                                    smooth={true}
+                                                    offset={0}
+                                                    duration={700}
+                                                    onClick={visitHomePage}
+                                                >
                                                     Pricing & Schedule
-                                                </Link>
+                                                </ScrollLink>
                                             </li>
-                                            <li className={classes['dropdown__list-item']}>
+                                            {/* <li className={classes['dropdown__list-item']}>
                                                 <Link to='/' onClick={hideMenu}>
                                                     TBD
                                                 </Link>
@@ -69,7 +96,7 @@ const Header = () => {
                                                 <Link to='/' onClick={hideMenu}>
                                                     TBD
                                                 </Link>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </div>
                                 </li>
@@ -92,7 +119,7 @@ const Header = () => {
                                                     Blog
                                                 </Link>
                                             </li>
-                                            <li className={classes['dropdown__list-item']}>
+                                            {/* <li className={classes['dropdown__list-item']}>
                                                 <Link to='/' onClick={hideMenu}>
                                                     TBD
                                                 </Link>
@@ -101,7 +128,7 @@ const Header = () => {
                                                 <Link to='/' onClick={hideMenu}>
                                                     TBD
                                                 </Link>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </div>
                                 </li>
@@ -109,16 +136,16 @@ const Header = () => {
 
                             {/* ============ Header Buttons ============= */}
                             <div className={classes['header__button']}>
-                                <a
+                                {/* <a
                                     href='https://calendly.com/d/hw9-7wv-n3y/assessment?month=2023-07'
                                     className={classes['header__button-login']}
                                     target='_blank'
                                     rel='noreferrer'
                                 >
                                     Log in
-                                </a>
+                                </a> */}
                                 <a
-                                    href='https://calendly.com/d/hw9-7wv-n3y/assessment?month=2023-07'
+                                    href='https://prepboxfirstclass.paperform.co/'
                                     className={classes['header__button-try']}
                                     target='_blank'
                                     rel='noreferrer'

@@ -1,5 +1,5 @@
 .support {
-    margin: 106px 0;
+    margin-top: 106px;
 }
 
 .support-content {
@@ -51,7 +51,7 @@
 
 @media (max-width: 991.98px) {
     .support {
-        margin: 80px 0;
+        margin-top: 80px;
     }
     .support-content {
         flex-direction: column;
@@ -89,7 +89,7 @@
 
 @media (max-width: 767.98px) {
     .support {
-        margin: 60px 0;
+        margin-top: 60px;
     }
     .support-content h2 {
         font-size: 34px;

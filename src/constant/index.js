@@ -8,6 +8,7 @@ import PostImage6 from './../assets/blog/post-6.png';
 export const blogPosts = [
     {
         id: 'post-1',
+        category: 'youtube',
         image: PostImage1,
         date: '8:00AM - 12-02-2022',
         title: 'Blog Title',
@@ -28,6 +29,7 @@ export const blogPosts = [
     },
     {
         id: 'post-2',
+        category: 'tutor',
         image: PostImage2,
         date: '8:00AM - 2-02-2023',
         title: 'Blog Title',
@@ -48,6 +50,7 @@ export const blogPosts = [
     },
     {
         id: 'post-3',
+        category: 'tutor',
         image: PostImage3,
         date: '8:00AM - 3-02-2023',
         title: 'Blog Title',
@@ -68,6 +71,7 @@ export const blogPosts = [
     },
     {
         id: 'post-4',
+        category: 'student',
         image: PostImage4,
         date: '8:00AM - 4-02-2023',
         title: 'Blog Title',
@@ -88,6 +92,7 @@ export const blogPosts = [
     },
     {
         id: 'post-5',
+        category: 'education',
         image: PostImage5,
         date: '8:00AM - 5-22-2023',
         title: 'Blog Title',
@@ -108,6 +113,7 @@ export const blogPosts = [
     },
     {
         id: 'post-6',
+        category: 'educaton',
         image: PostImage6,
         date: '8:00AM - 3-02-2023',
         title: 'Blog Title',

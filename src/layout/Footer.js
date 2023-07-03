@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='container'>
                 <div className={classes['footer-content']}>
                     <div className={classes['footer__copyright']}>
-                        <h5>Learn by Doing</h5>
+                        <h5>Your personal math coach</h5>
                         <p>
                             &copy; {new Date().getFullYear()} - PrepAnywhere Inc. All Right
                             Reserved. 8 Heintzman Cres., Maple, ON, Canada
@@ -49,14 +49,14 @@ const Footer = () => {
 
                         <div className={classes['footer__links']}>
                             <a
-                                href='https://calendly.com/d/hw9-7wv-n3y/assessment?month=2023-07'
+                                href='https://docs.google.com/document/d/15plLIrlTlMbqiwlLCWeSOIKKNVhM2r11xYJyXSmhGC8/'
                                 target='_blank'
                                 rel='noreferrer'
                             >
                                 Privacy Policy
                             </a>
                             <a
-                                href='https://calendly.com/d/hw9-7wv-n3y/assessment?month=2023-07'
+                                href='https://docs.google.com/document/d/1Rfj4Wr1fdJtcz1z1IbBZXH-4RhBQSWvKehl8034dkpM/edit#heading=h.h3j23o9bt7an'
                                 target='_blank'
                                 rel='noreferrer'
                             >

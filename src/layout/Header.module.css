@@ -81,6 +81,7 @@
     color: #fefefe;
     padding: 4px 0;
     transition: all 0.25s;
+    cursor: pointer;
 }
 
 .dropdown__list-item a:hover {

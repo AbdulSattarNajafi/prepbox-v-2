@@ -5,7 +5,7 @@ import classes from './Plans.module.css';
 
 const Plans = () => {
     return (
-        <section className={classes.plans}>
+        <section className={classes.plans} id='plans'>
             <div className='container'>
                 <div className={classes['plans-title']}>
                     <h2>Our Plans</h2>

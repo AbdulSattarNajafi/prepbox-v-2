@@ -11,7 +11,13 @@
 }
 
 .btn:hover {
-    color: #398fe5;
+    background-color: #398fe5;
+    color: #fefefe;
+}
+
+.btnActive {
+    background-color: #398fe5;
+    color: #fefefe;
 }
 
 @media (max-width: 991.98px) {
