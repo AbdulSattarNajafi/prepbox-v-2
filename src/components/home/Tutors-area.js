@@ -1,4 +1,4 @@
-import TutorsAreaImage from './../../assets/images/tutors-area.png';
+import TutorsAreaImage from './../../assets/images/png/tutors-area.png';
 import TutorsAreaImageWebp from './../../assets/images/webp/tutors-area.webp';
 import classes from './Tutors-area.module.css';
 

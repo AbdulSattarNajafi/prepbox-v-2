@@ -1,4 +1,5 @@
-import HeroImage from './../../assets/images/about-hero.png';
+import HeroImage from './../../assets/images/png/about-hero.png';
+import HeroImageWebp from './../../assets/images/webp/about-hero.webp';
 import classes from './Hero.module.css';
 
 const Hero = () => {
@@ -21,12 +22,10 @@ const Hero = () => {
 
                     <div className={classes['hero__content-image']}>
                         <div className={classes['hero__image']}>
-                            <img
-                                src={HeroImage}
-                                width='auto'
-                                height='auto'
-                                alt='PrepBox Founders'
-                            />
+                            <picture>
+                                <source srcset={HeroImageWebp} type='image/webp' />
+                                <img src={HeroImage} alt='PrepBox Founders' />
+                            </picture>
                         </div>
                     </div>
                 </div>

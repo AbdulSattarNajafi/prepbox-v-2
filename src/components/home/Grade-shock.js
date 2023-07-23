@@ -1,5 +1,7 @@
-import GradeImage1 from './../../assets/images/grade-1.png';
-import GradeImage2 from './../../assets/images/grade-2.png';
+import GradeImage1 from './../../assets/images/png/grade-1.png';
+import GradeImage1Webp from './../../assets/images/webp/grade-1.webp';
+import GradeImage2 from './../../assets/images/png/grade-2.png';
+import GradeImage2Webp from './../../assets/images/webp/grade-2.webp';
 
 import classes from './Grade-shock.module.css';
 
@@ -17,10 +19,16 @@ const GradeShock = () => {
                     </div>
                     <div className={classes['grade__image']}>
                         <div className={classes['grade__image-img']}>
-                            <img src={GradeImage1} width='auto' height='auto' alt='Grade' />
+                            <picture>
+                                <source srcset={GradeImage1Webp} type='image/webp' />
+                                <img src={GradeImage1} alt='Grade' />
+                            </picture>
                         </div>
                         <div className={classes['grade__image-img']}>
-                            <img src={GradeImage2} width='auto' height='auto' alt='Grade' />
+                            <picture>
+                                <source srcset={GradeImage2Webp} type='image/webp' />
+                                <img src={GradeImage2} alt='Grade' />
+                            </picture>
                         </div>
                     </div>
                 </div>

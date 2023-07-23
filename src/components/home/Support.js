@@ -1,7 +1,12 @@
 import PrimaryButton from '../button/Primary-button';
-import Lgcse from './../../assets/images/lgcse.png';
-import IBLogo from './../../assets/images/ib.png';
-import APLogo from './../../assets/images/ap.png';
+
+import Lgcse from './../../assets/images/png/lgcse.png';
+import LgcseWebp from './../../assets/images/webp/lgcse.webp';
+import IBLogo from './../../assets/images/png/ib.png';
+import IBLogoWebp from './../../assets/images/webp/ib.webp';
+import APLogo from './../../assets/images/png/ap.png';
+import APLogoWebp from './../../assets/images/webp/ap.webp';
+
 import classes from './Support.module.css';
 
 const Support = () => {
@@ -22,13 +27,22 @@ const Support = () => {
 
                         <div className={classes['support__logo']}>
                             <div className={classes['support__logo-item']}>
-                                <img src={Lgcse} width='auto' height='auto' alt='LGCSE logo' />
+                                <picture>
+                                    <source srcset={LgcseWebp} type='image/webp' />
+                                    <img src={Lgcse} alt='LGCSE logo' />
+                                </picture>
                             </div>
                             <div className={classes['support__logo-item']}>
-                                <img src={IBLogo} width='auto' height='auto' alt='IB logo' />
+                                <picture>
+                                    <source srcset={IBLogoWebp} type='image/webp' />
+                                    <img src={IBLogo} alt='IB logo' />
+                                </picture>
                             </div>
                             <div className={classes['support__logo-item']}>
-                                <img src={APLogo} width='auto' height='auto' alt='AP logo' />
+                                <picture>
+                                    <source srcset={APLogoWebp} type='image/webp' />
+                                    <img src={APLogo} alt='AP logo' />
+                                </picture>
                             </div>
                         </div>
                     </div>

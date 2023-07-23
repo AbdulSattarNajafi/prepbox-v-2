@@ -1,11 +1,14 @@
 import classes from './team-card.module.css';
 
-const TeamCard = ({ image, name, description, experience, almamater }) => {
+const TeamCard = ({ image, webpImage, name, description, experience, almamater }) => {
     return (
         <div className={classes.card}>
             <div className={classes['card__image']}>
                 <div className={classes['card__image-wrapper']}>
-                    <img src={image} alt={name} width='auto' height='auto' />
+                    <picture>
+                        <source srcset={webpImage} type='image/webp' />
+                        <img src={image} alt={name} />
+                    </picture>
                 </div>
             </div>
             <div className={classes['card__body']}>

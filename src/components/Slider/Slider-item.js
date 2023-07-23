@@ -1,6 +1,6 @@
 import classes from './Slider-item.module.css';
 
-const SliderItem = ({ label, title, text, image }) => {
+const SliderItem = ({ label, title, text, image, webpImage }) => {
     return (
         <div className={classes.slide}>
             <div className={classes['slide__text']}>
@@ -11,7 +11,10 @@ const SliderItem = ({ label, title, text, image }) => {
                 <p>{text}</p>
             </div>
             <div className={classes['slide__image']}>
-                <img src={image} width='auto' height='auto' alt={title} />
+                <picture>
+                    <source srcset={webpImage} type='image/webp' />
+                    <img src={image} alt={title} />
+                </picture>
             </div>
             <div className={classes['slide__placeholder']}></div>
         </div>

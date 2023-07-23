@@ -1,8 +1,13 @@
-import Georgetown from './../../assets/images/georgetown.png';
-import Harvard from './../../assets/images/harvard.png';
-import Northwestern from './../../assets/images/northwestern.png';
-import Toronto from './../../assets/images/toronto.png';
-import Waterloo from './../../assets/images/waterloo.png';
+import Georgetown from './../../assets/images/png/georgetown.png';
+import GeorgetownWebp from './../../assets/images/webp/georgetown.webp';
+import Harvard from './../../assets/images/png/harvard.png';
+import HarvardWebp from './../../assets/images/webp/harvard.webp';
+import Northwestern from './../../assets/images/png/northwestern.png';
+import NorthwesternWebp from './../../assets/images/webp/northwestern.webp';
+import Toronto from './../../assets/images/png/toronto.png';
+import TorontoWebp from './../../assets/images/webp/toronto.webp';
+import Waterloo from './../../assets/images/png/waterloo.png';
+import WaterlooWebp from './../../assets/images/webp/waterloo.webp';
 
 import classes from './Admission.module.css';
 
@@ -17,44 +22,34 @@ const Admission = () => {
 
                     <ul className={classes['admission__universities']}>
                         <li>
-                            <img
-                                src={Georgetown}
-                                width='auto'
-                                height='auto'
-                                alt='Georgetown University'
-                            />
+                            <picture>
+                                <source srcset={GeorgetownWebp} type='image/webp' />
+                                <img src={Georgetown} alt='Georgetown University' />
+                            </picture>
                         </li>
                         <li>
-                            <img
-                                src={Harvard}
-                                width='auto'
-                                height='auto'
-                                alt='Harvard University'
-                            />
+                            <picture>
+                                <source srcset={HarvardWebp} type='image/webp' />
+                                <img src={Harvard} alt='Harvard University' />
+                            </picture>
                         </li>
                         <li>
-                            <img
-                                src={Northwestern}
-                                width='auto'
-                                height='auto'
-                                alt='Northwestern University'
-                            />
+                            <picture>
+                                <source srcset={NorthwesternWebp} type='image/webp' />
+                                <img src={Northwestern} alt='Northwestern University' />
+                            </picture>
                         </li>
                         <li>
-                            <img
-                                src={Toronto}
-                                width='auto'
-                                height='auto'
-                                alt='Toronto University'
-                            />
+                            <picture>
+                                <source srcset={TorontoWebp} type='image/webp' />
+                                <img src={Toronto} alt='Toronto University' />
+                            </picture>
                         </li>
                         <li>
-                            <img
-                                src={Waterloo}
-                                width='auto'
-                                height='auto'
-                                alt='Waterloo University'
-                            />
+                            <picture>
+                                <source srcset={WaterlooWebp} type='image/webp' />
+                                <img src={Waterloo} alt='Waterloo University' />
+                            </picture>
                         </li>
                     </ul>
                 </div>

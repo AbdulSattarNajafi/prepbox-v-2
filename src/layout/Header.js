@@ -70,10 +70,11 @@ const Header = () => {
 
                                     <div className={classes['dropdown-content']}>
                                         <ul className={classes['dropdown__list']}>
-                                            <li className={classes['dropdown__list-item']}>
-                                                <Link to='/' onClick={hideMenu}>
-                                                    Home Page
-                                                </Link>
+                                            <li
+                                                className={classes['dropdown__list-item']}
+                                                onClick={hideMenu}
+                                            >
+                                                <Link to='/'>Home Page</Link>
                                             </li>
                                             <li className={classes['dropdown__list-item']}>
                                                 <ScrollLink
