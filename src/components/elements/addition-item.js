@@ -1,4 +1,4 @@
-import PlusIcon from './../../assets/images/plus-icon-circle.svg';
+import { ReactComponent as PlusIcon } from './../../assets/icons/plus-icon-circle.svg';
 
 import classes from './addition-item.module.css';
 
@@ -6,7 +6,7 @@ const AdditionItem = ({ text }) => {
     return (
         <div className={classes.addition}>
             <div className={classes['addition__icon']}>
-                <img src={PlusIcon} width='auto' height='auto' alt='Plus icon' />
+                <PlusIcon />
             </div>
             <h4>{text}</h4>
         </div>

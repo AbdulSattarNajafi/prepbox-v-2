@@ -1,6 +1,10 @@
-import Instagram from './../assets/images/instagram.svg';
-import Youtube from './../assets/images/youtube.svg';
-import Linkedin from './../assets/images/linkedin.svg';
+import Instagram from './../assets/icons/instagram.png';
+import InstagramWebp from './../assets/icons/instagram.webp';
+import Youtube from './../assets/icons/youtube.png';
+import YoutubeWebp from './../assets/icons/youtube.webp';
+import Linkedin from './../assets/icons/linkedin.png';
+import LinkedinWebp from './../assets/icons/linkedin.webp';
+
 import classes from './Footer.module.css';
 
 const Footer = () => {
@@ -24,12 +28,15 @@ const Footer = () => {
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <img
-                                        src={Instagram}
-                                        width='auto'
-                                        height='auto'
-                                        alt='Instagram icon'
-                                    />
+                                    <picture>
+                                        <source srcset={InstagramWebp} type='image/webp' />
+                                        <img
+                                            src={Instagram}
+                                            width='24'
+                                            height='25'
+                                            alt='Instagram Logo'
+                                        />
+                                    </picture>
                                 </a>
                             </li>
                             <li>
@@ -38,12 +45,15 @@ const Footer = () => {
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <img
-                                        src={Youtube}
-                                        width='auto'
-                                        height='auto'
-                                        alt='Instagram icon'
-                                    />
+                                    <picture>
+                                        <source srcset={YoutubeWebp} type='image/webp' />
+                                        <img
+                                            src={Youtube}
+                                            width='35'
+                                            height='24'
+                                            alt='Youtube Logo'
+                                        />
+                                    </picture>
                                 </a>
                             </li>
                             <li>
@@ -52,12 +62,15 @@ const Footer = () => {
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <img
-                                        src={Linkedin}
-                                        width='auto'
-                                        height='auto'
-                                        alt='Instagram icon'
-                                    />
+                                    <picture>
+                                        <source srcset={LinkedinWebp} type='image/webp' />
+                                        <img
+                                            src={Linkedin}
+                                            width='24'
+                                            height='23'
+                                            alt='Youtube Logo'
+                                        />
+                                    </picture>
                                 </a>
                             </li>
                         </ul>

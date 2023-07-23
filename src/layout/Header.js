@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
-import Logo from './../assets/images/logo.svg';
-import ArrowDown from './../assets/images/arrow-down.svg';
+import { ReactComponent as Logo } from './../assets/icons/logo.svg';
+import { ReactComponent as ArrowDown } from './../assets/icons/arrow-down.svg';
 import classes from './Header.module.css';
 
 const Header = () => {
@@ -52,7 +52,7 @@ const Header = () => {
                 <div className='container'>
                     <div className={classes.nav}>
                         <Link to='/' className={classes['header-logo']}>
-                            <img src={Logo} width='auto' height='auto' alt='PrepBox Logo' />
+                            <Logo />
                         </Link>
                         <div
                             className={`${classes.menu} ${
@@ -65,12 +65,7 @@ const Header = () => {
                                 <li className={classes['dropdown__item']}>
                                     <div className={classes['dropdown__item-button']}>
                                         <span>Why PrepBox</span>
-                                        <img
-                                            src={ArrowDown}
-                                            width='auto'
-                                            height='auto'
-                                            alt='Arrow Icon'
-                                        />
+                                        <ArrowDown />
                                     </div>
 
                                     <div className={classes['dropdown-content']}>
@@ -92,16 +87,6 @@ const Header = () => {
                                                     Pricing & Schedule
                                                 </ScrollLink>
                                             </li>
-                                            {/* <li className={classes['dropdown__list-item']}>
-                                                <Link to='/' onClick={hideMenu}>
-                                                    TBD
-                                                </Link>
-                                            </li>
-                                            <li className={classes['dropdown__list-item']}>
-                                                <Link to='/' onClick={hideMenu}>
-                                                    TBD
-                                                </Link>
-                                            </li> */}
                                         </ul>
                                     </div>
                                 </li>
@@ -109,12 +94,7 @@ const Header = () => {
                                 <li className={classes['dropdown__item']}>
                                     <div className={classes['dropdown__item-button']}>
                                         <span>About Us</span>
-                                        <img
-                                            src={ArrowDown}
-                                            width='auto'
-                                            height='auto'
-                                            alt='Arrow Icon'
-                                        />
+                                        <ArrowDown />
                                     </div>
 
                                     <div className={classes['dropdown-content']}>
@@ -129,16 +109,6 @@ const Header = () => {
                                                     Blog
                                                 </Link>
                                             </li>
-                                            {/* <li className={classes['dropdown__list-item']}>
-                                                <Link to='/' onClick={hideMenu}>
-                                                    TBD
-                                                </Link>
-                                            </li>
-                                            <li className={classes['dropdown__list-item']}>
-                                                <Link to='/' onClick={hideMenu}>
-                                                    TBD
-                                                </Link>
-                                            </li> */}
                                         </ul>
                                     </div>
                                 </li>
@@ -146,14 +116,6 @@ const Header = () => {
 
                             {/* ============ Header Buttons ============= */}
                             <div className={classes['header__button']}>
-                                {/* <a
-                                    href='https://calendly.com/d/hw9-7wv-n3y/assessment?month=2023-07'
-                                    className={classes['header__button-login']}
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    Log in
-                                </a> */}
                                 <a
                                     href='https://prepboxfirstclass.paperform.co/'
                                     className={classes['header__button-try']}
