@@ -23,6 +23,9 @@
 }
 
 @media (max-width: 767.98px) {
+    .hero {
+        background-image: url('./../../assets/images/home-hero-sm.png');
+    }
     .hero__content p {
         font-size: 20px;
     }

@@ -14,7 +14,7 @@ const PostDetail = ({ postId }) => {
                 {post ? (
                     <div className={classes['post__card']}>
                         <div className={classes['post__card-image']}>
-                            <img src={post.image} alt={post.title} />
+                            <img src={post.image} alt={post.title} width='auto' height='auto' />
                         </div>
                         <div className={classes['post__card-body']}>
                             <h4>{post.date}</h4>
@@ -34,6 +34,9 @@ const PostDetail = ({ postId }) => {
                                     </div>
                                 );
                             })}
+                            <a href={post.link}>
+                                <p>{post.link}</p>
+                            </a>
                         </div>
                     </div>
                 ) : (

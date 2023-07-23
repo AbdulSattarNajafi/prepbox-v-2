@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import classes from './blog-card.module.css';
 
-const BlogCard = ({ image, subtitle, description, postId }) => {
+const BlogCard = ({ image, title, subtitle, link, postId }) => {
     const navigate = useNavigate();
 
     const postDetailHandler = () => {
@@ -13,11 +13,11 @@ const BlogCard = ({ image, subtitle, description, postId }) => {
     return (
         <div className={classes.card} onClick={postDetailHandler}>
             <div className={classes['card__image']}>
-                <img src={image} alt={subtitle} />
+                <img src={image} alt={subtitle} width='auto' height='auto' />
             </div>
             <div className={classes['card__body']}>
-                <h4>{subtitle}</h4>
-                <p>{description}</p>
+                <h4>{title}</h4>
+                <p>{subtitle}</p>
             </div>
         </div>
     );

@@ -22,13 +22,13 @@ const Support = () => {
 
                         <div className={classes['support__logo']}>
                             <div className={classes['support__logo-item']}>
-                                <img src={Lgcse} alt='LGCSE logo' />
+                                <img src={Lgcse} width='auto' height='auto' alt='LGCSE logo' />
                             </div>
                             <div className={classes['support__logo-item']}>
-                                <img src={IBLogo} alt='IB logo' />
+                                <img src={IBLogo} width='auto' height='auto' alt='IB logo' />
                             </div>
                             <div className={classes['support__logo-item']}>
-                                <img src={APLogo} alt='AP logo' />
+                                <img src={APLogo} width='auto' height='auto' alt='AP logo' />
                             </div>
                         </div>
                     </div>

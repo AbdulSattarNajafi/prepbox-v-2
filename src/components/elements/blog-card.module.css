@@ -21,7 +21,7 @@
 
 .card__body p {
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 @media (max-width: 991.98px) {

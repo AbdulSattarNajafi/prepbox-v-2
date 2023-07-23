@@ -29,7 +29,6 @@ const Plans = () => {
                         price='$450/mo'
                     />
                 </div>
-
                 <div className={classes['plans-button']}>
                     <PrimaryButton text='Try for free' />
                 </div>

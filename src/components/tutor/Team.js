@@ -19,31 +19,41 @@ const Team = () => {
                     <TeamCard
                         image={TeamImage1}
                         name='Min Lee '
-                        description='Founder/CEO Tutor Experience: 20 years Alma mater: University of Toronto'
+                        description='Founder/CEO'
+                        experience= '20 years'
+                        almamater='University of Toronto'
                     />
 
                     <TeamCard
                         image={TeamImage2}
                         name='Sam Kwon '
-                        description='Chief Growth Officer Tutor Experience: 2 years Alma mater: MIT'
+                        description='Chief Growth Officer'
+                        experience='2 years'
+                        almamater='MIT'
                     />
 
                     <TeamCard
                         image={TeamImage3}
                         name='Jina Seok'
-                        description='Senior Lead Tutor Tutor Experience: 5 years Alma mater: University of Toronto'
+                        description='Senior Lead Tutor'
+                        experience='5 years'
+                        almamater='University of Toronto'
                     />
 
                     <TeamCard
                         image={TeamImage4}
                         name='Aria Hwang'
-                        description='Assistant Tutor Tutor Experience: 3 years Alma mater: McMaster University'
+                        description='Assistant Tutor'
+                        experience='3 years'
+                        almamater='McMaster University'
                     />
 
                     <TeamCard
                         image={TeamImage5}
                         name='Payton Coutlis'
-                        description='Lead Tutor Tutor Experience: 4 years Alma mater: Harvard University'
+                        description='Lead Tutor Tutor'
+                        experience='4 years'
+                        almamater='Harvard University'
                     />
                 </div>
 
@@ -52,13 +62,17 @@ const Team = () => {
                     <TeamCard
                         image={TeamImage6}
                         name='Kyle Pearce'
-                        description='Curriculum Advisor Consultant to School Board Teaching Experience: 16 years Alma mater: University of Windsor'
+                        description='Consultant to School Board'
+                        experience='16 years'
+                        almamater='University of Windsor'
                     />
 
                     <TeamCard
                         image={TeamImage7}
                         name='Sanghon Kim'
-                        description="Curriculum Advisor Founder of Queen's College Seoul Teaching Experience: 15 years Alma mater: Oxford University"
+                        description="Founder of Queen's College Seoul"
+                        experience='15 years'
+                        almamater='Oxford University'
                     />
                 </div>
             </div>

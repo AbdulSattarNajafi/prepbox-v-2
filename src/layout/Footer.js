@@ -20,29 +20,44 @@ const Footer = () => {
                         <ul className={classes['footer__social-list']}>
                             <li>
                                 <a
-                                    href='https://www.instagram.com/'
+                                    href='https://www.instagram.com/prepboxmath'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <img src={Instagram} alt='Instagram icon' />
+                                    <img
+                                        src={Instagram}
+                                        width='auto'
+                                        height='auto'
+                                        alt='Instagram icon'
+                                    />
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href='https://www.instagram.com/'
+                                    href='https://www.youtube.com/watch?v=ih3hNg5Y-4c'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <img src={Youtube} alt='Instagram icon' />
+                                    <img
+                                        src={Youtube}
+                                        width='auto'
+                                        height='auto'
+                                        alt='Instagram icon'
+                                    />
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href='https://www.instagram.com/'
+                                    href='https://www.linkedin.com/company/prepboxmath'
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <img src={Linkedin} alt='Instagram icon' />
+                                    <img
+                                        src={Linkedin}
+                                        width='auto'
+                                        height='auto'
+                                        alt='Instagram icon'
+                                    />
                                 </a>
                             </li>
                         </ul>

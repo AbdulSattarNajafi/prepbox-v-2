@@ -17,19 +17,44 @@ const Admission = () => {
 
                     <ul className={classes['admission__universities']}>
                         <li>
-                            <img src={Georgetown} alt='Georgetown University' />
+                            <img
+                                src={Georgetown}
+                                width='auto'
+                                height='auto'
+                                alt='Georgetown University'
+                            />
                         </li>
                         <li>
-                            <img src={Harvard} alt='Harvard University' />
+                            <img
+                                src={Harvard}
+                                width='auto'
+                                height='auto'
+                                alt='Harvard University'
+                            />
                         </li>
                         <li>
-                            <img src={Northwestern} alt='Northwestern University' />
+                            <img
+                                src={Northwestern}
+                                width='auto'
+                                height='auto'
+                                alt='Northwestern University'
+                            />
                         </li>
                         <li>
-                            <img src={Toronto} alt='Toronto University' />
+                            <img
+                                src={Toronto}
+                                width='auto'
+                                height='auto'
+                                alt='Toronto University'
+                            />
                         </li>
                         <li>
-                            <img src={Waterloo} alt='Waterloo University' />
+                            <img
+                                src={Waterloo}
+                                width='auto'
+                                height='auto'
+                                alt='Waterloo University'
+                            />
                         </li>
                     </ul>
                 </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap'); */
 
 *,
 *::before,
@@ -44,6 +44,10 @@ button {
     transition: all 0.25s;
     cursor: pointer;
 }
+button:focus {
+    outline: none;
+    box-shadow: unset;
+}
 
 h1 {
     font-size: 51px;
@@ -61,6 +65,12 @@ h3 {
     font-size: 27px;
     font-weight: 700;
     line-height: 1.4;
+}
+
+.secondary-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 140%;
 }
 
 .container {
@@ -109,6 +119,9 @@ h3 {
 }
 
 @media (max-width: 1199.98px) {
+    .secondary-title {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -118,6 +131,10 @@ h3 {
 
     h2 {
         font-size: 38px;
+    }
+
+    .secondary-title {
+        font-size: 28px;
     }
 
     h3 {
@@ -132,6 +149,9 @@ h3 {
 
     h2 {
         font-size: 34px;
+    }
+    .secondary-title {
+        font-size: 26px;
     }
     .container {
         padding: 0 16px;
@@ -155,6 +175,9 @@ h3 {
     }
     h2 {
         font-size: 26px;
+    }
+    .secondary-title {
+        font-size: 24px;
     }
     h3 {
         font-size: 22px;

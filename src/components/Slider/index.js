@@ -25,41 +25,41 @@ const SliderComponent = () => {
                 <SliderItem
                     label='1'
                     title='Syllabus matching'
-                    text='We tutor based on our students curriculum needs'
+                    text='We design the courses based on curriculum needs'
                     image={SliderImg1}
                 />
                 <SliderItem
                     label='2'
-                    title='Watch lectures'
-                    text='We have hundreds of lectures to demonstrate solutions'
+                    title='Watch mini-lectures'
+                    text='Learn core concepts through our short mini-lectures'
                     image={SliderImg2}
                 />
 
                 <SliderItem
                     label='3'
-                    title='Solving questions'
-                    text='Students begin solving questions, while monitored by their tutor'
+                    title='Solve questions'
+                    text='Students begin solving questions on our whiteboard while our tutors monitor'
                     image={SliderImg3}
                 />
 
                 <SliderItem
                     label='4'
-                    title='Submit work'
-                    text='Our tutors immediately grade and gives feedback'
+                    title='Submit & get marked  '
+                    text='Our tutors immediately grade and gives feedback within minutes'
                     image={SliderImg4}
                 />
 
                 <SliderItem
                     label='5'
-                    title='Questions'
-                    text='When students needs clarification, our tutors dive in and provide  guidance until there are no more confusion'
+                    title='Ask questions'
+                    text='When students needs clarification, our tutors answer in real-time'
                     image={SliderImg5}
                 />
 
                 <SliderItem
                     label='6'
-                    title='Mastery'
-                    text='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+                    title='Review and master'
+                    text='Generate similar questions of the ones you got wrong until you master the subject'
                     image={SliderImg6}
                 />
             </Slider>

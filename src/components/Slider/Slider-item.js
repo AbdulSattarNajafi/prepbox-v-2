@@ -11,7 +11,7 @@ const SliderItem = ({ label, title, text, image }) => {
                 <p>{text}</p>
             </div>
             <div className={classes['slide__image']}>
-                <img src={image} alt={title} />
+                <img src={image} width='auto' height='auto' alt={title} />
             </div>
             <div className={classes['slide__placeholder']}></div>
         </div>

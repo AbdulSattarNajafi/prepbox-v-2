@@ -52,7 +52,7 @@ const Header = () => {
                 <div className='container'>
                     <div className={classes.nav}>
                         <Link to='/' className={classes['header-logo']}>
-                            <img src={Logo} alt='PrepBox Logo' />
+                            <img src={Logo} width='auto' height='auto' alt='PrepBox Logo' />
                         </Link>
                         <div
                             className={`${classes.menu} ${
@@ -65,7 +65,12 @@ const Header = () => {
                                 <li className={classes['dropdown__item']}>
                                     <div className={classes['dropdown__item-button']}>
                                         <span>Why PrepBox</span>
-                                        <img src={ArrowDown} alt='Arrow Icon' />
+                                        <img
+                                            src={ArrowDown}
+                                            width='auto'
+                                            height='auto'
+                                            alt='Arrow Icon'
+                                        />
                                     </div>
 
                                     <div className={classes['dropdown-content']}>
@@ -104,7 +109,12 @@ const Header = () => {
                                 <li className={classes['dropdown__item']}>
                                     <div className={classes['dropdown__item-button']}>
                                         <span>About Us</span>
-                                        <img src={ArrowDown} alt='Arrow Icon' />
+                                        <img
+                                            src={ArrowDown}
+                                            width='auto'
+                                            height='auto'
+                                            alt='Arrow Icon'
+                                        />
                                     </div>
 
                                     <div className={classes['dropdown-content']}>
@@ -156,14 +166,27 @@ const Header = () => {
                         </div>
 
                         {/* ============ Mobile Menu Button ============= */}
-                        <button
-                            className={`${classes.toggler} ${showMenu ? `${classes.open}` : ''}`}
-                            onClick={togglerMenuHandler}
-                        >
-                            <span className={classes['toggler__top']}></span>
-                            <span className={classes['toggler__middle']}></span>
-                            <span className={classes['toggler__bottom']}></span>
-                        </button>
+                        <div className={classes['toggler-container']}>
+                            <a
+                                href='https://prepboxfirstclass.paperform.co/'
+                                className={`${classes['header__button-try']} ${classes['header__button-try-sm']}`}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                Try for free
+                            </a>
+
+                            <button
+                                className={`${classes.toggler} ${
+                                    showMenu ? `${classes.open}` : ''
+                                }`}
+                                onClick={togglerMenuHandler}
+                            >
+                                <span className={classes['toggler__top']}></span>
+                                <span className={classes['toggler__middle']}></span>
+                                <span className={classes['toggler__bottom']}></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </header>
