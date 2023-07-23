@@ -24,31 +24,56 @@ const Admission = () => {
                         <li>
                             <picture>
                                 <source srcset={GeorgetownWebp} type='image/webp' />
-                                <img src={Georgetown} alt='Georgetown University' />
+                                <img
+                                    src={Georgetown}
+                                    width='135'
+                                    height='40'
+                                    alt='Georgetown University'
+                                />
                             </picture>
                         </li>
                         <li>
                             <picture>
                                 <source srcset={HarvardWebp} type='image/webp' />
-                                <img src={Harvard} alt='Harvard University' />
+                                <img
+                                    src={Harvard}
+                                    width='135'
+                                    height='40'
+                                    alt='Harvard University'
+                                />
                             </picture>
                         </li>
                         <li>
                             <picture>
                                 <source srcset={NorthwesternWebp} type='image/webp' />
-                                <img src={Northwestern} alt='Northwestern University' />
+                                <img
+                                    src={Northwestern}
+                                    width='135'
+                                    height='40'
+                                    alt='Northwestern University'
+                                />
                             </picture>
                         </li>
                         <li>
                             <picture>
                                 <source srcset={TorontoWebp} type='image/webp' />
-                                <img src={Toronto} alt='Toronto University' />
+                                <img
+                                    src={Toronto}
+                                    width='135'
+                                    height='40'
+                                    alt='Toronto University'
+                                />
                             </picture>
                         </li>
                         <li>
                             <picture>
                                 <source srcset={WaterlooWebp} type='image/webp' />
-                                <img src={Waterloo} alt='Waterloo University' />
+                                <img
+                                    src={Waterloo}
+                                    width='135'
+                                    height='40'
+                                    alt='Waterloo University'
+                                />
                             </picture>
                         </li>
                     </ul>

@@ -14,7 +14,10 @@ const PostDetail = ({ postId }) => {
                 {post ? (
                     <div className={classes['post__card']}>
                         <div className={classes['post__card-image']}>
-                            <img src={post.image} alt={post.title} width='auto' height='auto' />
+                            <picture>
+                                <source srcset={post.webpImage} type='image/webp' />
+                                <img src={post.image} alt={post.title} width='770' height='668' />
+                            </picture>
                         </div>
                         <div className={classes['post__card-body']}>
                             <h4>{post.date}</h4>

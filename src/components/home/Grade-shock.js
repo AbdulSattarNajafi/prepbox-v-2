@@ -21,13 +21,13 @@ const GradeShock = () => {
                         <div className={classes['grade__image-img']}>
                             <picture>
                                 <source srcset={GradeImage1Webp} type='image/webp' />
-                                <img src={GradeImage1} alt='Grade' />
+                                <img src={GradeImage1} width='371' height='274' alt='Grade' />
                             </picture>
                         </div>
                         <div className={classes['grade__image-img']}>
                             <picture>
                                 <source srcset={GradeImage2Webp} type='image/webp' />
-                                <img src={GradeImage2} alt='Grade' />
+                                <img src={GradeImage2} width='233' height='284' alt='Grade' />
                             </picture>
                         </div>
                     </div>

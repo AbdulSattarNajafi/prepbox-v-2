@@ -51,6 +51,7 @@ const BlogPosts = () => {
                             <BlogCard
                                 key={post.id}
                                 image={post.image}
+                                webpImage={post.webpImage}
                                 title={post.title}
                                 subtitle={post.subtitle}
                                 description={post.description}

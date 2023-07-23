@@ -29,19 +29,19 @@ const Support = () => {
                             <div className={classes['support__logo-item']}>
                                 <picture>
                                     <source srcset={LgcseWebp} type='image/webp' />
-                                    <img src={Lgcse} alt='LGCSE logo' />
+                                    <img src={Lgcse} width='151' height='151' alt='LGCSE logo' />
                                 </picture>
                             </div>
                             <div className={classes['support__logo-item']}>
                                 <picture>
                                     <source srcset={IBLogoWebp} type='image/webp' />
-                                    <img src={IBLogo} alt='IB logo' />
+                                    <img src={IBLogo} width='173' height='171' alt='IB logo' />
                                 </picture>
                             </div>
                             <div className={classes['support__logo-item']}>
                                 <picture>
                                     <source srcset={APLogoWebp} type='image/webp' />
-                                    <img src={APLogo} alt='AP logo' />
+                                    <img src={APLogo} width='350' height='111' alt='AP logo' />
                                 </picture>
                             </div>
                         </div>

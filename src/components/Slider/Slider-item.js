@@ -13,7 +13,7 @@ const SliderItem = ({ label, title, text, image, webpImage }) => {
             <div className={classes['slide__image']}>
                 <picture>
                     <source srcset={webpImage} type='image/webp' />
-                    <img src={image} alt={title} />
+                    <img src={image} width='450' height='383' alt={title} />
                 </picture>
             </div>
             <div className={classes['slide__placeholder']}></div>

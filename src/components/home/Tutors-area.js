@@ -10,7 +10,7 @@ const TutorsArea = () => {
                     <div className={classes['tutors__image']}>
                         <picture>
                             <source srcset={TutorsAreaImageWebp} type='image/webp' />
-                            <img src={TutorsAreaImage} alt='Your ' />
+                            <img src={TutorsAreaImage} width='490' height='382' alt='Your ' />
                         </picture>
                     </div>
                     <div className={classes['tutors__text']}>
