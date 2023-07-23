@@ -12,7 +12,6 @@ const TutorsArea = () => {
                             <source srcset={TutorsAreaImageWebp} type='image/webp' />
                             <img src={TutorsAreaImage} alt='Your ' />
                         </picture>
-                        <img src={TutorsAreaImage} width='auto' height='auto' alt='Tutors Area' />
                     </div>
                     <div className={classes['tutors__text']}>
                         <h2 className='secondary-title'>
