@@ -1,4 +1,5 @@
 import TutorsAreaImage from './../../assets/images/tutors-area.png';
+import TutorsAreaImageWebp from './../../assets/images/webp/tutors-area.webp';
 import classes from './Tutors-area.module.css';
 
 const TutorsArea = () => {
@@ -7,6 +8,10 @@ const TutorsArea = () => {
             <div className='container'>
                 <div className={classes['tutors-content']}>
                     <div className={classes['tutors__image']}>
+                        <picture>
+                            <source srcset={TutorsAreaImageWebp} type='image/webp' />
+                            <img src={TutorsAreaImage} alt='Your ' />
+                        </picture>
                         <img src={TutorsAreaImage} width='auto' height='auto' alt='Tutors Area' />
                     </div>
                     <div className={classes['tutors__text']}>
