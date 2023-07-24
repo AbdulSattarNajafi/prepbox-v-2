@@ -15,7 +15,9 @@ const Error = () => {
                         The page you are looking for might have been removed, had it's name changed
                         or is temporary unavailable.
                     </p>
-                    <button onClick={visitHomePage}>Go to Home page</button>
+                    <button onClick={visitHomePage} aria-label='Home page'>
+                        Go to Home page
+                    </button>
                 </div>
             </div>
         </section>

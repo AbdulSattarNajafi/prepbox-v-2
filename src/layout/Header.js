@@ -144,6 +144,7 @@ const Header = () => {
                             </a>
 
                             <button
+                                aria-label='Menu button'
                                 className={`${classes.toggler} ${
                                     showMenu ? `${classes.open}` : ''
                                 }`}

@@ -1,22 +1,15 @@
 import PostImage1 from './../assets/blog/png/1.png';
-import PostImage1Webp from './../assets/blog/webp/1.webp';
 import PostImage2 from './../assets/blog/png/2.png';
-import PostImage2Webp from './../assets/blog/webp/2.webp';
 import PostImage3 from './../assets/blog/png/3.png';
-import PostImage3Webp from './../assets/blog/webp/3.webp';
 import PostImage4 from './../assets/blog/png/4.png';
-import PostImage4Webp from './../assets/blog/webp/4.webp';
 import PostImage5 from './../assets/blog/png/5.png';
-import PostImage5Webp from './../assets/blog/webp/5.webp';
 import PostImage6 from './../assets/blog/png/6.png';
-import PostImage6Webp from './../assets/blog/webp/6.webp';
 
 export const blogPosts = [
     {
         id: 'post-1',
         category: 'youtube',
         image: PostImage1,
-        webpImage: PostImage1Webp,
         date: 'May 26, 2023',
         title: 'Mistakes are Opportunities',
         caption:
@@ -42,7 +35,6 @@ export const blogPosts = [
         id: 'post-2',
         category: 'tutor',
         image: PostImage2,
-        webpImage: PostImage2Webp,
         date: 'May 8, 2023',
         title: 'East vs. West in Approach',
         caption: 'What are the differences in appraoch? Which is better?',
@@ -77,7 +69,6 @@ export const blogPosts = [
         id: 'post-3',
         category: 'tutor',
         image: PostImage3,
-        webpImage: PostImage3Webp,
         date: 'April 25, 2023',
         title: 'Math = Basketball',
         caption:
@@ -110,7 +101,6 @@ export const blogPosts = [
         id: 'post-4',
         category: 'youtube',
         image: PostImage4,
-        webpImage: PostImage4Webp,
         date: 'April 13, 2023',
         title: "Don't Panic!",
         caption: "Following COVID, many students mess up basic concepts. That's OK",
@@ -134,7 +124,6 @@ export const blogPosts = [
         id: 'post-5',
         category: 'education',
         image: PostImage5,
-        webpImage: PostImage5Webp,
         date: 'March 12, 2023',
         title: 'What happens if Florida bans AP?',
         caption: 'How the potential ban can effect you',
@@ -184,7 +173,6 @@ export const blogPosts = [
         id: 'post-6',
         category: '',
         image: PostImage6,
-        webpImage: PostImage6Webp,
         date: 'December 6, 2023',
         title: 'PrepBox Official Launch',
         caption: 'PrepBox has officially launched',

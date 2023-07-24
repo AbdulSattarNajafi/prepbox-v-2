@@ -53,7 +53,7 @@ const PostDetail = ({ postId }) => {
                             The blog post you are looking for might have been removed, had it's name
                             changed or is temporary unavailable.
                         </p>
-                        <button type='button' onClick={gotToBlogPage}>
+                        <button type='button' aria-label='Home Page' onClick={gotToBlogPage}>
                             Go to Blog page
                         </button>
                     </div>

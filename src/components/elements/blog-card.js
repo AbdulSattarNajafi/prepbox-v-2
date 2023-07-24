@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import classes from './blog-card.module.css';
 
-const BlogCard = ({ image, webpImage, title, subtitle, link, postId }) => {
+const BlogCard = ({ image, title, subtitle, link, postId }) => {
     const navigate = useNavigate();
 
     const postDetailHandler = () => {

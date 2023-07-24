@@ -2,7 +2,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import classes from './team-card.module.css';
 
-const TeamCard = ({ image, webpImage, name, description, experience, almamater }) => {
+const TeamCard = ({ image, name, description, experience, almamater }) => {
     return (
         <div className={classes.card}>
             <div className={classes['card__image']}>

@@ -7,9 +7,10 @@
 .addition__icon {
     width: 74px;
     margin-right: 16px;
+    line-height: 1;
 }
 
-.addition__icon img {
+.addition__icon svg {
     width: 100%;
     height: auto;
 }

@@ -2,7 +2,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import classes from './Slider-item.module.css';
 
-const SliderItem = ({ label, title, text, image, webpImage }) => {
+const SliderItem = ({ label, title, text, image }) => {
     return (
         <div className={classes.slide}>
             <div className={classes['slide__text']}>
