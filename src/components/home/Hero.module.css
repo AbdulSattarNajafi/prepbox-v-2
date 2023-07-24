@@ -2,7 +2,7 @@
     display: flex;
     align-items: flex-end;
     background-color: #ffffff;
-    /* background-image: url('./../../assets/images/png/home-hero.png'); */
+    background-image: url('./../../assets/images/png/home-hero.png');
     background-size: cover;
     background-position: top center;
     height: 100vh;
@@ -24,9 +24,9 @@
 }
 
 @media (max-width: 767.98px) {
-    /* .hero {
+    .hero {
         background-image: url('./../../assets/images/png/home-hero-sm.png');
-    } */
+    }
     .hero__content p {
         font-size: 20px;
     }
