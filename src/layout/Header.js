@@ -51,7 +51,11 @@ const Header = () => {
             >
                 <div className='container'>
                     <div className={classes.nav}>
-                        <Link to='/' className={classes['header-logo']}>
+                        <Link
+                            to='/'
+                            className={classes['header-logo']}
+                            aria-label='Prepbox home page'
+                        >
                             <Logo />
                         </Link>
                         <div
