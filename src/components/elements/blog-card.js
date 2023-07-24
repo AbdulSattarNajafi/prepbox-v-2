@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import classes from './blog-card.module.css';
 
 const BlogCard = ({ image, webpImage, title, subtitle, link, postId }) => {
@@ -13,10 +14,7 @@ const BlogCard = ({ image, webpImage, title, subtitle, link, postId }) => {
     return (
         <div className={classes.card} onClick={postDetailHandler}>
             <div className={classes['card__image']}>
-                <picture>
-                    <source srcset={webpImage} type='image/webp' />
-                    <img src={image} alt={subtitle} width='282' height='208' />
-                </picture>
+                <LazyLoadImage src={image} alt={subtitle} width='282' height='208' effect='blur' />
             </div>
             <div className={classes['card__body']}>
                 <h4>{title}</h4>

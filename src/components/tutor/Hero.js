@@ -1,5 +1,6 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import HeroImage from './../../assets/images/png/about-hero.png';
-import HeroImageWebp from './../../assets/images/webp/about-hero.webp';
 import classes from './Hero.module.css';
 
 const Hero = () => {
@@ -22,10 +23,13 @@ const Hero = () => {
 
                     <div className={classes['hero__content-image']}>
                         <div className={classes['hero__image']}>
-                            <picture>
-                                <source srcset={HeroImageWebp} type='image/webp' />
-                                <img src={HeroImage} alt='PrepBox Founders' />
-                            </picture>
+                            <LazyLoadImage
+                                src={HeroImage}
+                                alt='PrepBox Founders'
+                                width='446'
+                                height='342'
+                                effect='blur'
+                            />
                         </div>
                     </div>
                 </div>

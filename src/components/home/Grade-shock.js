@@ -1,8 +1,7 @@
-import GradeImage1 from './../../assets/images/png/grade-1.png';
-import GradeImage1Webp from './../../assets/images/webp/grade-1.webp';
-import GradeImage2 from './../../assets/images/png/grade-2.png';
-import GradeImage2Webp from './../../assets/images/webp/grade-2.webp';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+import GradeImage1 from './../../assets/images/png/grade-1.png';
+import GradeImage2 from './../../assets/images/png/grade-2.png';
 import classes from './Grade-shock.module.css';
 
 const GradeShock = () => {
@@ -19,16 +18,22 @@ const GradeShock = () => {
                     </div>
                     <div className={classes['grade__image']}>
                         <div className={classes['grade__image-img']}>
-                            <picture>
-                                <source srcset={GradeImage1Webp} type='image/webp' />
-                                <img src={GradeImage1} width='371' height='274' alt='Grade' />
-                            </picture>
+                            <LazyLoadImage
+                                src={GradeImage1}
+                                width='371'
+                                height='274'
+                                alt='Grade'
+                                effect='blur'
+                            />
                         </div>
                         <div className={classes['grade__image-img']}>
-                            <picture>
-                                <source srcset={GradeImage2Webp} type='image/webp' />
-                                <img src={GradeImage2} width='233' height='284' alt='Grade' />
-                            </picture>
+                            <LazyLoadImage
+                                src={GradeImage2}
+                                width='233'
+                                height='284'
+                                alt='Grade'
+                                effect='blur'
+                            />
                         </div>
                     </div>
                 </div>

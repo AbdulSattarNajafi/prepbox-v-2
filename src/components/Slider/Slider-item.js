@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import classes from './Slider-item.module.css';
 
 const SliderItem = ({ label, title, text, image, webpImage }) => {
@@ -11,10 +13,7 @@ const SliderItem = ({ label, title, text, image, webpImage }) => {
                 <p>{text}</p>
             </div>
             <div className={classes['slide__image']}>
-                <picture>
-                    <source srcset={webpImage} type='image/webp' />
-                    <img src={image} width='450' height='383' alt={title} />
-                </picture>
+                <LazyLoadImage src={image} width='450' height='383' alt={title} effect='blur' />
             </div>
             <div className={classes['slide__placeholder']}></div>
         </div>

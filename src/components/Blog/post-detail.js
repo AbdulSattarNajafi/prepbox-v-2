@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { blogPosts } from '../../constant';
 import classes from './post-detail.module.css';
 
@@ -14,10 +15,13 @@ const PostDetail = ({ postId }) => {
                 {post ? (
                     <div className={classes['post__card']}>
                         <div className={classes['post__card-image']}>
-                            <picture>
-                                <source srcset={post.webpImage} type='image/webp' />
-                                <img src={post.image} alt={post.title} width='770' height='668' />
-                            </picture>
+                            <LazyLoadImage
+                                src={post.image}
+                                alt={post.title}
+                                width='770'
+                                height='668'
+                                effect='blur'
+                            />
                         </div>
                         <div className={classes['post__card-body']}>
                             <h4>{post.date}</h4>

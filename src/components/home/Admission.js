@@ -1,13 +1,10 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import Georgetown from './../../assets/images/png/georgetown.png';
-import GeorgetownWebp from './../../assets/images/webp/georgetown.webp';
 import Harvard from './../../assets/images/png/harvard.png';
-import HarvardWebp from './../../assets/images/webp/harvard.webp';
 import Northwestern from './../../assets/images/png/northwestern.png';
-import NorthwesternWebp from './../../assets/images/webp/northwestern.webp';
 import Toronto from './../../assets/images/png/toronto.png';
-import TorontoWebp from './../../assets/images/webp/toronto.webp';
 import Waterloo from './../../assets/images/png/waterloo.png';
-import WaterlooWebp from './../../assets/images/webp/waterloo.webp';
 
 import classes from './Admission.module.css';
 
@@ -22,59 +19,49 @@ const Admission = () => {
 
                     <ul className={classes['admission__universities']}>
                         <li>
-                            <picture>
-                                <source srcset={GeorgetownWebp} type='image/webp' />
-                                <img
-                                    src={Georgetown}
-                                    width='135'
-                                    height='40'
-                                    alt='Georgetown University'
-                                />
-                            </picture>
+                            <LazyLoadImage
+                                src={Georgetown}
+                                width='135'
+                                height='40'
+                                alt='Georgetown University'
+                                effect='blur'
+                            />
                         </li>
                         <li>
-                            <picture>
-                                <source srcset={HarvardWebp} type='image/webp' />
-                                <img
-                                    src={Harvard}
-                                    width='135'
-                                    height='40'
-                                    alt='Harvard University'
-                                />
-                            </picture>
+                            <LazyLoadImage
+                                src={Harvard}
+                                width='135'
+                                height='40'
+                                alt='Harvard University'
+                                effect='blur'
+                            />
                         </li>
                         <li>
-                            <picture>
-                                <source srcset={NorthwesternWebp} type='image/webp' />
-                                <img
-                                    src={Northwestern}
-                                    width='135'
-                                    height='40'
-                                    alt='Northwestern University'
-                                />
-                            </picture>
+                            <LazyLoadImage
+                                src={Northwestern}
+                                width='135'
+                                height='40'
+                                alt='Northwestern University'
+                                effect='blur'
+                            />
                         </li>
                         <li>
-                            <picture>
-                                <source srcset={TorontoWebp} type='image/webp' />
-                                <img
-                                    src={Toronto}
-                                    width='135'
-                                    height='40'
-                                    alt='Toronto University'
-                                />
-                            </picture>
+                            <LazyLoadImage
+                                src={Toronto}
+                                width='135'
+                                height='40'
+                                alt='Toronto University'
+                                effect='blur'
+                            />
                         </li>
                         <li>
-                            <picture>
-                                <source srcset={WaterlooWebp} type='image/webp' />
-                                <img
-                                    src={Waterloo}
-                                    width='135'
-                                    height='40'
-                                    alt='Waterloo University'
-                                />
-                            </picture>
+                            <LazyLoadImage
+                                src={Waterloo}
+                                width='135'
+                                height='40'
+                                alt='Waterloo University'
+                                effect='blur'
+                            />
                         </li>
                     </ul>
                 </div>

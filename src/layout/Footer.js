@@ -1,9 +1,8 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import Instagram from './../assets/icons/instagram.png';
-import InstagramWebp from './../assets/icons/instagram.webp';
 import Youtube from './../assets/icons/youtube.png';
-import YoutubeWebp from './../assets/icons/youtube.webp';
 import Linkedin from './../assets/icons/linkedin.png';
-import LinkedinWebp from './../assets/icons/linkedin.webp';
 
 import classes from './Footer.module.css';
 
@@ -28,15 +27,13 @@ const Footer = () => {
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <picture>
-                                        <source srcset={InstagramWebp} type='image/webp' />
-                                        <img
-                                            src={Instagram}
-                                            width='24'
-                                            height='25'
-                                            alt='Instagram Logo'
-                                        />
-                                    </picture>
+                                    <LazyLoadImage
+                                        src={Instagram}
+                                        width='24'
+                                        height='25'
+                                        alt='Instagram Logo'
+                                        effect='blur'
+                                    />
                                 </a>
                             </li>
                             <li>
@@ -45,15 +42,13 @@ const Footer = () => {
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <picture>
-                                        <source srcset={YoutubeWebp} type='image/webp' />
-                                        <img
-                                            src={Youtube}
-                                            width='35'
-                                            height='24'
-                                            alt='Youtube Logo'
-                                        />
-                                    </picture>
+                                    <LazyLoadImage
+                                        src={Youtube}
+                                        width='35'
+                                        height='24'
+                                        alt='Youtube Logo'
+                                        effect='blur'
+                                    />
                                 </a>
                             </li>
                             <li>
@@ -62,15 +57,13 @@ const Footer = () => {
                                     target='_blank'
                                     rel='noreferrer'
                                 >
-                                    <picture>
-                                        <source srcset={LinkedinWebp} type='image/webp' />
-                                        <img
-                                            src={Linkedin}
-                                            width='24'
-                                            height='23'
-                                            alt='Youtube Logo'
-                                        />
-                                    </picture>
+                                    <LazyLoadImage
+                                        src={Linkedin}
+                                        width='24'
+                                        height='23'
+                                        alt='Youtube Logo'
+                                        effect='blur'
+                                    />
                                 </a>
                             </li>
                         </ul>

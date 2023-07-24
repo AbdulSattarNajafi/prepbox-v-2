@@ -1,7 +1,6 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import TutorsAreaImage from './../../assets/images/png/tutors-area.png';
-// import TutorsAreaImageWebp from './../../assets/images/webp/tutors-area.webp';
 import classes from './Tutors-area.module.css';
 
 const TutorsArea = () => {
@@ -11,15 +10,12 @@ const TutorsArea = () => {
                 <div className={classes['tutors-content']}>
                     <div className={classes['tutors__image']}>
                         <LazyLoadImage
-                            src={TutorsAreaImage} // use normal <img> attributes as props
+                            src={TutorsAreaImage}
                             width='490'
                             height='382'
                             alt='Math'
+                            effect='blur'
                         />
-                        {/* <picture>
-                            <source srcset={TutorsAreaImageWebp} type='image/webp' />
-                            <img src={TutorsAreaImage} width='490' height='382' alt='Your ' />
-                        </picture> */}
                     </div>
                     <div className={classes['tutors__text']}>
                         <h2 className='secondary-title'>
