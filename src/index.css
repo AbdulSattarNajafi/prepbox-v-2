@@ -6,27 +6,6 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: 'Inter';
-    src: url(./assets/font/Inter-Regular.ttf);
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Inter';
-    src: url(./assets/font/Inter-Medium.ttf);
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'Inter';
-    src: url(./assets/font/Inter-SemiBold.ttf);
-    font-weight: 600;
-}
-@font-face {
-    font-family: 'Inter';
-    src: url(./assets/font/Inter-Bold.ttf);
-    font-weight: 700;
-}
-
 body {
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
