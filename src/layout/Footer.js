@@ -33,7 +33,6 @@ const Footer = () => {
                                         width='24'
                                         height='25'
                                         alt='Instagram Logo'
-                                        effect='blur'
                                     />
                                 </a>
                             </li>
@@ -49,7 +48,6 @@ const Footer = () => {
                                         width='35'
                                         height='24'
                                         alt='Youtube Logo'
-                                        effect='blur'
                                     />
                                 </a>
                             </li>
@@ -65,7 +63,6 @@ const Footer = () => {
                                         width='24'
                                         height='23'
                                         alt='Youtube Logo'
-                                        effect='blur'
                                     />
                                 </a>
                             </li>

@@ -1,4 +1,5 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import HeroImage from './../../assets/images/png/home-hero.png';
 import HeroImageMd from './../../assets/images/png/home-hero-md.png';
 import HeroImageSm from './../../assets/images/png/home-hero-sm.png';

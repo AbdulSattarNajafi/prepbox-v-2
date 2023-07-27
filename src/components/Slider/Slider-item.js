@@ -13,7 +13,7 @@ const SliderItem = ({ label, title, text, image }) => {
                 <p>{text}</p>
             </div>
             <div className={classes['slide__image']}>
-                <LazyLoadImage src={image} width='450' height='383' alt={title} effect='blur' />
+                <LazyLoadImage src={image} width='450' height='383' alt={title} />
             </div>
             <div className={classes['slide__placeholder']}></div>
         </div>

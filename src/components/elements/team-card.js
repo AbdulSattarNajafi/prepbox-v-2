@@ -7,7 +7,7 @@ const TeamCard = ({ image, name, description, experience, almamater }) => {
         <div className={classes.card}>
             <div className={classes['card__image']}>
                 <div className={classes['card__image-wrapper']}>
-                    <LazyLoadImage src={image} alt={name} width='286' height='286' effect='blur' />
+                    <LazyLoadImage src={image} alt={name} width='286' height='286' />
                 </div>
             </div>
             <div className={classes['card__body']}>

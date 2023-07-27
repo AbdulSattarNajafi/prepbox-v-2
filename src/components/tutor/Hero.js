@@ -28,7 +28,6 @@ const Hero = () => {
                                 alt='PrepBox Founders'
                                 width='446'
                                 height='342'
-                                effect='blur'
                             />
                         </div>
                     </div>

@@ -30,7 +30,6 @@ const Support = () => {
                                     width='151'
                                     height='151'
                                     alt='LGCSE logo'
-                                    effect='blur'
                                 />
                             </div>
                             <div className={classes['support__logo-item']}>
@@ -39,7 +38,6 @@ const Support = () => {
                                     width='173'
                                     height='171'
                                     alt='IB logo'
-                                    effect='blur'
                                 />
                             </div>
                             <div className={classes['support__logo-item']}>
@@ -48,7 +46,6 @@ const Support = () => {
                                     width='350'
                                     height='111'
                                     alt='AP logo'
-                                    effect='blur'
                                 />
                             </div>
                         </div>

@@ -9,13 +9,7 @@ const TutorsArea = () => {
             <div className='container'>
                 <div className={classes['tutors-content']}>
                     <div className={classes['tutors__image']}>
-                        <LazyLoadImage
-                            src={TutorsAreaImage}
-                            width='490'
-                            height='382'
-                            alt='Math'
-                            effect='blur'
-                        />
+                        <LazyLoadImage src={TutorsAreaImage} width='490' height='382' alt='Math' />
                     </div>
                     <div className={classes['tutors__text']}>
                         <h2 className='secondary-title'>

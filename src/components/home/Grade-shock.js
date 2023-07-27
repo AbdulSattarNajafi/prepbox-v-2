@@ -18,22 +18,10 @@ const GradeShock = () => {
                     </div>
                     <div className={classes['grade__image']}>
                         <div className={classes['grade__image-img']}>
-                            <LazyLoadImage
-                                src={GradeImage1}
-                                width='371'
-                                height='274'
-                                alt='Grade'
-                                effect='blur'
-                            />
+                            <LazyLoadImage src={GradeImage1} width='371' height='274' alt='Grade' />
                         </div>
                         <div className={classes['grade__image-img']}>
-                            <LazyLoadImage
-                                src={GradeImage2}
-                                width='233'
-                                height='284'
-                                alt='Grade'
-                                effect='blur'
-                            />
+                            <LazyLoadImage src={GradeImage2} width='233' height='284' alt='Grade' />
                         </div>
                     </div>
                 </div>

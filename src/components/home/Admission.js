@@ -24,7 +24,6 @@ const Admission = () => {
                                 width='135'
                                 height='40'
                                 alt='Georgetown University'
-                                effect='blur'
                             />
                         </li>
                         <li>
@@ -33,7 +32,6 @@ const Admission = () => {
                                 width='135'
                                 height='40'
                                 alt='Harvard University'
-                                effect='blur'
                             />
                         </li>
                         <li>
@@ -42,7 +40,6 @@ const Admission = () => {
                                 width='135'
                                 height='40'
                                 alt='Northwestern University'
-                                effect='blur'
                             />
                         </li>
                         <li>
@@ -51,7 +48,6 @@ const Admission = () => {
                                 width='135'
                                 height='40'
                                 alt='Toronto University'
-                                effect='blur'
                             />
                         </li>
                         <li>
@@ -60,7 +56,6 @@ const Admission = () => {
                                 width='135'
                                 height='40'
                                 alt='Waterloo University'
-                                effect='blur'
                             />
                         </li>
                     </ul>
