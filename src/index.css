@@ -6,6 +6,43 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(Inter-Regular), local('Inter-Regular'),
+        url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap)
+            format('ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local(Inter-Medium), local('Inter-Medium'),
+        url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap)
+            format('ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: local(Inter-SemiBold), local('Inter-SemiBold'),
+        url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap)
+            format('ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(Inter-Bold), local('Inter-Bold'),
+        url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap)
+            format('ttf');
+    font-display: swap;
+}
+
 body {
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
