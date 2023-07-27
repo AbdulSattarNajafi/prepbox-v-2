@@ -1,6 +1,6 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import HeroImage from './../../assets/images/png/home-hero.png';
-import HeroImageWebp from './../../assets/images/png/home-hero.webp';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import HeroImage from './../../assets/images/png/home-hero.png';
+// import HeroImageWebp from './../../assets/images/png/home-hero.webp';
 // import HeroImageMd from './../../assets/images/png/home-hero-md.png';
 // import HeroImageSm from './../../assets/images/png/home-hero-sm.png';
 // import HeroImageXs from './../../assets/images/png/home-hero-xs.png';
@@ -21,12 +21,12 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className={classes['hero__image']}>
+            {/* <div className={classes['hero__image']}>
                 <picture>
                     <source type='image/webp' srcSet={HeroImageWebp} />
                     <img src={HeroImage} width='1120' height='622' alt='Banner' />
                 </picture>
-                {/* <LazyLoadImage
+                <LazyLoadImage
                     className={classes['hero__image-lg']}
                     src={HeroImage}
                     width='1120'
@@ -57,8 +57,8 @@ const Hero = () => {
                     height='582'
                     alt='Banner'
                     effect='blur'
-                /> */}
-            </div>
+                />
+            </div> */}
         </section>
     );
 };
