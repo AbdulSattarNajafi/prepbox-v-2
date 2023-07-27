@@ -1,5 +1,8 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import HeroImage from './../../assets/images/png/home-hero.png';
+import HeroImageMd from './../../assets/images/png/home-hero-md.png';
+import HeroImageSm from './../../assets/images/png/home-hero-sm.png';
+import HeroImageXs from './../../assets/images/png/home-hero-xs.png';
 
 import PrimaryButton from '../button/Primary-button';
 import classes from './Hero.module.css';
@@ -18,7 +21,34 @@ const Hero = () => {
             </div>
 
             <div className={classes['hero__image']}>
-                <LazyLoadImage src={HeroImage} width='1400' height='800' alt='Banner' />
+                <LazyLoadImage
+                    className={classes['hero__image-lg']}
+                    src={HeroImage}
+                    width='1400'
+                    height='800'
+                    alt='Banner'
+                />
+                <LazyLoadImage
+                    className={classes['hero__image-md']}
+                    src={HeroImageMd}
+                    width='1100'
+                    height='600'
+                    alt='Banner'
+                />
+                <LazyLoadImage
+                    className={classes['hero__image-sm']}
+                    src={HeroImageSm}
+                    width='800'
+                    height='600'
+                    alt='Banner'
+                />
+                <LazyLoadImage
+                    className={classes['hero__image-xs']}
+                    src={HeroImageXs}
+                    width='600'
+                    height='400'
+                    alt='Banner'
+                />
             </div>
         </section>
     );
