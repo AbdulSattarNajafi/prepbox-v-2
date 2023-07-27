@@ -24,32 +24,32 @@ const Hero = () => {
                 <LazyLoadImage
                     className={classes['hero__image-lg']}
                     src={HeroImage}
-                    width='1400'
-                    height='800'
+                    width='1120'
+                    height='622'
                     alt='Banner'
                     effect='blur'
                 />
                 <LazyLoadImage
                     className={classes['hero__image-md']}
                     src={HeroImageMd}
-                    width='1100'
-                    height='600'
+                    width='860'
+                    height='593'
                     alt='Banner'
                     effect='blur'
                 />
                 <LazyLoadImage
                     className={classes['hero__image-sm']}
                     src={HeroImageSm}
-                    width='800'
-                    height='600'
+                    width='440'
+                    height='550'
                     alt='Banner'
                     effect='blur'
                 />
                 <LazyLoadImage
                     className={classes['hero__image-xs']}
                     src={HeroImageXs}
-                    width='600'
-                    height='400'
+                    width='320'
+                    height='582'
                     alt='Banner'
                     effect='blur'
                 />
