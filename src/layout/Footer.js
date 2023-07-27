@@ -26,6 +26,7 @@ const Footer = () => {
                                     href='https://www.instagram.com/prepboxmath'
                                     target='_blank'
                                     rel='noreferrer'
+                                    aria-label='Prepbox Instagram Page'
                                 >
                                     <LazyLoadImage
                                         src={Instagram}
@@ -41,6 +42,7 @@ const Footer = () => {
                                     href='https://www.youtube.com/watch?v=ih3hNg5Y-4c'
                                     target='_blank'
                                     rel='noreferrer'
+                                    aria-label='Prepbox Youtube Chanel'
                                 >
                                     <LazyLoadImage
                                         src={Youtube}
@@ -56,6 +58,7 @@ const Footer = () => {
                                     href='https://www.linkedin.com/company/prepboxmath'
                                     target='_blank'
                                     rel='noreferrer'
+                                    aria-label='Prepbox on Linkedin'
                                 >
                                     <LazyLoadImage
                                         src={Linkedin}
