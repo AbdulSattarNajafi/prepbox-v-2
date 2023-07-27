@@ -1,10 +1,12 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { blogPosts } from '../../constant';
 import classes from './post-detail.module.css';
 
-const PostDetail = ({ postId }) => {
+const PostDetail = () => {
     const navigate = useNavigate();
+    const { postId } = useParams();
+
     const gotToBlogPage = () => navigate('/blog', { replace: true });
 
     const post = blogPosts.find((item) => item.id === postId);
