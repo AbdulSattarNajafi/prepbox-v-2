@@ -1,14 +1,11 @@
-import React, { Suspense } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Layout from './layout/Layout';
-import Loader from './components/elements/loader';
+import Home from './pages/Home';
+import Tutor from './pages/Tutor';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import NotFound from './pages/NotFound';
-
-const HomePage = React.lazy(() => import('./pages/Home'));
-const TutorPage = React.lazy(() => import('./pages/Tutor'));
-const BlogPage = React.lazy(() => import('./pages/Blog'));
-const BlogPostPage = React.lazy(() => import('./pages/BlogPost'));
 
 const router = createBrowserRouter([
     {
@@ -18,35 +15,19 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: (
-                    <Suspense fallback={<Loader />}>
-                        <HomePage />
-                    </Suspense>
-                ),
+                element: <Home />,
             },
             {
                 path: 'tutor',
-                element: (
-                    <Suspense fallback={<Loader />}>
-                        <TutorPage />
-                    </Suspense>
-                ),
+                element: <Tutor />,
             },
             {
                 path: 'blog',
-                element: (
-                    <Suspense fallback={<Loader />}>
-                        <BlogPage />
-                    </Suspense>
-                ),
+                element: <Blog />,
             },
             {
                 path: 'blog/:postId',
-                element: (
-                    <Suspense fallback={<Loader />}>
-                        <BlogPostPage />
-                    </Suspense>
-                ),
+                element: <BlogPost />,
             },
         ],
     },
