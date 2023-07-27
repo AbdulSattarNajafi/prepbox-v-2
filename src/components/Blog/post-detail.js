@@ -22,7 +22,6 @@ const PostDetail = () => {
                                 alt={post.title}
                                 width='770'
                                 height='668'
-                                effect='blur'
                             />
                         </div>
                         <div className={classes['post__card-body']}>

@@ -14,7 +14,7 @@ const BlogCard = ({ image, title, subtitle, link, postId }) => {
     return (
         <div className={classes.card} onClick={postDetailHandler}>
             <div className={classes['card__image']}>
-                <LazyLoadImage src={image} alt={subtitle} width='282' height='208' effect='blur' />
+                <LazyLoadImage src={image} alt={subtitle} width='282' height='208' />
             </div>
             <div className={classes['card__body']}>
                 <h4>{title}</h4>
