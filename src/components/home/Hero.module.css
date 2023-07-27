@@ -52,7 +52,7 @@
     .hero__image-lg {
         display: none;
     }
-    .hero__image-md {
+    .hero__image-sm {
         display: block;
     }
 }
@@ -61,12 +61,12 @@
     .hero {
         /* background-image: url('./../../assets/images/png/home-hero-sm.png'); */
     }
-    .hero__image-md {
+    /* .hero__image-md {
         display: none;
     }
     .hero__image-sm {
         display: block;
-    }
+    } */
     .hero__content p {
         font-size: 20px;
     }
@@ -77,12 +77,12 @@
         /* background-image: url('./../../assets/images/png/home-hero-xs.png'); */
         padding-bottom: 60px;
     }
-    .hero__image-sm {
+    /* .hero__image-sm {
         display: none;
     }
     .hero__image-xs {
         display: block;
-    }
+    } */
     .hero__content p {
         font-size: 18px;
     }
