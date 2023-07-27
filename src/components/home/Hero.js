@@ -27,6 +27,7 @@ const Hero = () => {
                     width='1400'
                     height='800'
                     alt='Banner'
+                    effect='blur'
                 />
                 <LazyLoadImage
                     className={classes['hero__image-md']}
@@ -34,6 +35,7 @@ const Hero = () => {
                     width='1100'
                     height='600'
                     alt='Banner'
+                    effect='blur'
                 />
                 <LazyLoadImage
                     className={classes['hero__image-sm']}
@@ -41,6 +43,7 @@ const Hero = () => {
                     width='800'
                     height='600'
                     alt='Banner'
+                    effect='blur'
                 />
                 <LazyLoadImage
                     className={classes['hero__image-xs']}
@@ -48,6 +51,7 @@ const Hero = () => {
                     width='600'
                     height='400'
                     alt='Banner'
+                    effect='blur'
                 />
             </div>
         </section>
