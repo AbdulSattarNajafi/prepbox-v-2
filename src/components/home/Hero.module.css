@@ -2,10 +2,10 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     background-image: url('./../../assets/images/png/home-hero.png');
     background-size: cover;
-    background-position: top center;
+    background-position: top center; */
     height: 100vh;
     padding-bottom: 80px;
 }
