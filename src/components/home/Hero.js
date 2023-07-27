@@ -1,9 +1,8 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import HeroImage from './../../assets/images/png/home-hero.png';
-// import HeroImageWebp from './../../assets/images/png/home-hero.webp';
-// import HeroImageMd from './../../assets/images/png/home-hero-md.png';
+import HeroImageMd from './../../assets/images/png/home-hero-md.png';
 import HeroImageSm from './../../assets/images/png/home-hero-sm.png';
-// import HeroImageXs from './../../assets/images/png/home-hero-xs.png';
+import HeroImageXs from './../../assets/images/png/home-hero-xs.png';
 
 import PrimaryButton from '../button/Primary-button';
 import classes from './Hero.module.css';
@@ -22,10 +21,6 @@ const Hero = () => {
             </div>
 
             <div className={classes['hero__image']}>
-                {/* <picture>
-                    <source type='image/webp' srcSet={HeroImageWebp} />
-                    <img src={HeroImage} width='1120' height='622' alt='Banner' />
-                </picture> */}
                 <LazyLoadImage
                     className={classes['hero__image-lg']}
                     src={HeroImage}
@@ -33,14 +28,13 @@ const Hero = () => {
                     height='622'
                     alt='Banner'
                 />
-                {/* <LazyLoadImage
+                <LazyLoadImage
                     className={classes['hero__image-md']}
                     src={HeroImageMd}
                     width='860'
                     height='593'
                     alt='Banner'
-                    effect='blur'
-                /> */}
+                />
                 <LazyLoadImage
                     className={classes['hero__image-sm']}
                     src={HeroImageSm}
@@ -48,14 +42,13 @@ const Hero = () => {
                     height='550'
                     alt='Banner'
                 />
-                {/* <LazyLoadImage
+                <LazyLoadImage
                     className={classes['hero__image-xs']}
                     src={HeroImageXs}
                     width='320'
                     height='582'
                     alt='Banner'
-                    effect='blur'
-                /> */}
+                />
             </div>
         </section>
     );
