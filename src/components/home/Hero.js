@@ -26,7 +26,7 @@ const Hero = () => {
             <div className={classes['hero__image']}>
                 <picture>
                     <source type='image/webp' srcSet={HeroImageWebp} />
-                    <img src={HeroImage} width='1120' height='622' alt='Banner' />
+                    <img src={HeroImage} width='1120' height='622' alt='Banner' loading='eager' />
                 </picture>
                 {/* <LazyLoadImage
                     className={classes['hero__image-lg']}
