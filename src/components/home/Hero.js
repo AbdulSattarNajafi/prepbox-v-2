@@ -22,7 +22,7 @@ const Hero = () => {
             </div>
 
             <div className={classes['hero__image']}>
-                {/* <LazyLoadImage
+                <LazyLoadImage
                     className={classes['hero__image-lg']}
                     src={HeroImage}
                     width='1120'
@@ -49,7 +49,7 @@ const Hero = () => {
                     width='320'
                     height='582'
                     alt='Banner'
-                /> */}
+                />
             </div>
         </section>
     );
