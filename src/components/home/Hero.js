@@ -31,7 +31,13 @@ const Hero = () => {
             <div className={classes['hero__image']}>
                 <picture className={classes['hero__image-lg']}>
                     <source type='image/webp' srcSet={HeroImageWebp} />
-                    <img src={HeroImage} width='1120' height='622' alt='Banner' />
+                    <img
+                        fetchpriority='high'
+                        src={HeroImage}
+                        width='1120'
+                        height='622'
+                        alt='Banner'
+                    />
                 </picture>
 
                 {/* <LazyLoadImage
@@ -44,7 +50,13 @@ const Hero = () => {
 
                 <picture className={classes['hero__image-md']}>
                     <source type='image/webp' srcSet={HeroImageMdWebp} />
-                    <img src={HeroImageMd} width='860' height='593' alt='Banner' />
+                    <img
+                        fetchpriority='high'
+                        src={HeroImageMd}
+                        width='860'
+                        height='593'
+                        alt='Banner'
+                    />
                 </picture>
 
                 {/* <LazyLoadImage
@@ -57,7 +69,13 @@ const Hero = () => {
 
                 <picture className={classes['hero__image-sm']}>
                     <source type='image/webp' srcSet={HeroImageSmWebp} />
-                    <img src={HeroImageSm} width='440' height='550' alt='Banner' />
+                    <img
+                        fetchpriority='high'
+                        src={HeroImageSm}
+                        width='440'
+                        height='550'
+                        alt='Banner'
+                    />
                 </picture>
 
                 {/* <LazyLoadImage
@@ -70,7 +88,13 @@ const Hero = () => {
 
                 <picture className={classes['hero__image-xs']}>
                     <source type='image/webp' srcSet={HeroImageXsWebp} />
-                    <img src={HeroImageXs} width='320' height='582' alt='Banner' />
+                    <img
+                        fetchpriority='high'
+                        src={HeroImageXs}
+                        width='320'
+                        height='582'
+                        alt='Banner'
+                    />
                 </picture>
 
                 {/* <LazyLoadImage
